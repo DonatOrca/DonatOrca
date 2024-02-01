@@ -1,7 +1,12 @@
+import useMediaQuery from "../useMediaQuery";
+
+import Modal from "../Modal";
+import Constitution from "./Constitution";
+
+import "../css/Dashboard.css";
+
 import bg from "../../assets/svg/dashboard_bg.svg";
 import de from "../../assets/image/dashboard_img.png";
-import "../css/Dashboard.css";
-import useMediaQuery from "../useMediaQuery";
 
 function Dashboard() {
   const matches = useMediaQuery("(min-width: 1600px)");
@@ -31,7 +36,7 @@ function Dashboard() {
                   quo quas vitae.
                 </h4>
                 <br />
-                <div className="bylaw">
+                <div className="bylaw" data-bs-toggle="modal" data-bs-target="#constitutionModal">
                   <h4 id="bylaw">BY LAWS AND CONSTITUTION</h4>
                 </div>
               </div>
@@ -42,6 +47,9 @@ function Dashboard() {
           </div>
         </>
       )}
+      <Modal id="constitutionModal">
+        <Constitution />
+      </Modal>
     </>
   );
 }
