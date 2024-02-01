@@ -47,7 +47,7 @@ function Dashboard() {
           </div>
         </>
       )}
-      <Modal id="constitutionModal">
+      <Modal header="Bylaws and Constitution" id="constitutionModal">
         <Constitution />
       </Modal>
     </>
