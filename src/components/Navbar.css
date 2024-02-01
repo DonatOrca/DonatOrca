@@ -1,0 +1,19 @@
+body {
+  background-color: var(--body_background) !important;
+}
+.navbar {
+  margin-bottom: 50px;
+}
+.nav-link {
+  font-family: Kollektif, sans-serif;
+  font-size: 1.4em !important;
+  color: var(--body_color) !important;
+  margin: 50px 150px 0px 0px !important;
+}
+.nav-link:hover {
+  filter: drop-shadow(0 0 1.5em var(--nav_hover)) !important;
+  color: var(--body_color);
+}
+#darkmode {
+  margin-right: 50px;
+}

@@ -1,0 +1,43 @@
+#dashboard-bg {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: -0;
+}
+
+#title-text {
+  font-family: Lovelo, sans-serif;
+  font-size: 6em;
+  margin: 0px 0px -10px 0px;
+  letter-spacing: 10px;
+}
+
+#title-sub-text {
+  font-family: Bebas Nueue, sans-serif;
+  letter-spacing: 2px;
+}
+#content-text {
+  font-family: Kollektif, sans-serif;
+  text-align: justify;
+}
+
+.title {
+  text-align: center;
+}
+
+.bylaw {
+  text-align: center;
+}
+
+#bylaw {
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-family: Bebas Nueue, sans-serif;
+  letter-spacing: 4px;
+  color: var(--body_background);
+  background-color: var(--body_color);
+  border-radius: 24px;
+}
