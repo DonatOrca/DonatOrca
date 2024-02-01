@@ -16,7 +16,7 @@ function Dashboard() {
         <>
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 d-flex flex-column justify-content-center">
+              <div className="col-lg-6 flex-column justify-content-center">
                 <div className="title">
                   <h1 id="title-text">DONAT</h1>
                   <h4 id="title-sub-text">
