@@ -6,11 +6,13 @@ const DarkMode = () => {
 
   const setDarkMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
+    document.documentElement.setAttribute("data-bs-theme", "dark");
     localStorage.setItem("selectedTheme", "dark");
   };
 
   const setLightMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "light");
+    document.documentElement.setAttribute("data-bs-theme", "light");
     localStorage.setItem("selectedTheme", "light");
   };
 
