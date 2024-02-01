@@ -1,15 +1,22 @@
+/* React */
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+/* Bootstrap */
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+/* Components */
+import App from "./App.tsx";
+
 import Dashboard from "./components/pages/Dashboard.tsx";
 import Announcement from "./components/pages/Announcement.tsx";
 import Officers from "./components/pages/Officers.tsx";
 import History from "./components/pages/History.tsx";
 
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
+/* Setup page routes */
 const router = createBrowserRouter([
   {
     path: "/DonatOrca/",
@@ -34,6 +41,8 @@ const router = createBrowserRouter([
     ],
   },
 ]);
+
+/* react does some cool stuff here */
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
