@@ -2,12 +2,16 @@
   scroll-behavior: smooth;
   --body_background: #fce3ff;
   --body_color: #1d1432;
+  --tertiary_background: #fce3ff;
+  --tertiary_color: #55115d;
   --nav_hover: #0e0505;
 }
 
 [data-theme="dark"] {
   --body_background: #1d1432;
   --body_color: #fce3ff;
+  --tertiary_background: #55115d;
+  --tertiary_color:#fce3ff;
   --nav_hover: #e0e1e4;
 }
 
