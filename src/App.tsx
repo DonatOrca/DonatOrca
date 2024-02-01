@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 /* CSS */
-import "./App.css";
-import "./Fonts.css";
+import "./css/App.css";
+import "./css/Fonts.css";
 
 
 function App() {

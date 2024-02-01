@@ -1,6 +1,6 @@
 #constitution {
   --color: black;
-  background-image: url(../../assets/image/constitution_bg.png);
+  background-image: url(../assets/image/constitution_bg.png);
   background-size: cover;
   background-repeat: repeat;
   color: var(--color);

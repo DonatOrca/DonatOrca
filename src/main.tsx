@@ -10,10 +10,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 /* Components */
 import App from "./App.tsx";
 
-import Dashboard from "./components/pages/Dashboard.tsx";
-import Announcement from "./components/pages/Announcement.tsx";
-import Officers from "./components/pages/Officers.tsx";
-import History from "./components/pages/History.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
+import Announcement from "./pages/Announcement.tsx";
+import Officers from "./pages/Officers.tsx";
+import History from "./pages/History.tsx";
 
 
 /* Setup page routes */

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "./DarkMode.css";
+import "../css/DarkMode.css";
 
 const DarkMode = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const setDarkMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "dark");
-    document.documentElement.setAttribute("data-bs-theme", "dark");
+    // document.documentElement.setAttribute("data-bs-theme", "dark");
     localStorage.setItem("selectedTheme", "dark");
   };
 
   const setLightMode = () => {
     document.querySelector("body")?.setAttribute("data-theme", "light");
-    document.documentElement.setAttribute("data-bs-theme", "light");
+    // document.documentElement.setAttribute("data-bs-theme", "light");
     localStorage.setItem("selectedTheme", "light");
   };
 

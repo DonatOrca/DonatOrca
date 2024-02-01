@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 interface Props {
   children: ReactNode,
-  header?: ReactNode,
+  header?: string,
   id?: string
 }
 

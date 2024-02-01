@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import DarkMode from "./DarkMode";
-import "./Navbar.css";
-import "../Fonts.css";
+import "../css/Navbar.css";
+import "../css/Fonts.css";
+
 import useMediaQuery from "./useMediaQuery";
 
 function Navbar() {

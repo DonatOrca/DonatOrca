@@ -1,12 +1,12 @@
-import useMediaQuery from "../useMediaQuery";
+import useMediaQuery from "../components/useMediaQuery";
 
-import Modal from "../Modal";
+import Modal from "../components/Modal";
 import Constitution from "./Constitution";
 
 import "../css/Dashboard.css";
 
-import bg from "../../assets/svg/dashboard_bg.svg";
-import de from "../../assets/image/dashboard_img.png";
+import bg from "../assets/svg/dashboard_bg.svg";
+import de from "../assets/image/dashboard_img.png";
 
 function Dashboard() {
   const matches = useMediaQuery("(min-width: 1600px)");
