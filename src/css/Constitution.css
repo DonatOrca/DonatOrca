@@ -30,3 +30,7 @@
   --bs-modal-bg: var(--body_background);
   --bs-modal-width: 800px;
 }
+
+[data-theme="dark"] #constitutionModal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
