@@ -11,7 +11,7 @@ footer {
 }
 
 #footer-body {
-  background-image: url(src/assets/image/footer_img.png);
+  background-image: url(../assets/image/footer_img.png);
   background-size: cover;
   padding: 25px 50px 25px 100px;
 }
