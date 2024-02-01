@@ -42,7 +42,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-/* react does some cool stuff here */
+/* react does some cool stuff here i mean it creates our website in index.html's div#root i think */
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
