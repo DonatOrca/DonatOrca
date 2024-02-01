@@ -16,6 +16,7 @@
   font-family: Bebas Nueue, sans-serif;
   letter-spacing: 2px;
 }
+
 #content-text {
   font-family: Kollektif, sans-serif;
   text-align: justify;
@@ -41,4 +42,16 @@
   color: var(--tertiary_background);
   background-color: var(--tertiary_color);
   border-radius: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+  #title-text {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #title-text {
+    font-size: 3em;
+  }
 }
