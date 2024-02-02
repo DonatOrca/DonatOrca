@@ -1,41 +1,56 @@
 /* Styles for the Bylaws and Constitution, and its modal */
 
-/* Light Theme */
 #constitution {
-  --color: black;
-
   background-image: url(../assets/image/constitution_bg.png);
-  background-size: cover;
-  background-repeat: repeat-y;
+  background-size: contain;
+  background-repeat: repeat;
   background-position: right top;
-  image-rendering: pixelated;
-  color: var(--color);
+
+  * {
+    color: var(--color);
+  }
 
   p {
-    padding-left: 15px;
     font-family: Kollektif;
-    color: var(--color);
+    padding-left: 15px;
+    margin-bottom: 10px;
     max-width: 600px;
   }
 
-  p p {
-    padding-left: 25px;
+  h1,
+  h2 {
+    font-family: Bebas Nueue;
+    padding: 10px 0;
   }
 
-  h1, h2 {
-    font-family: Bebas Nueue;
-    color: var(--color);
+  h1 {
+    font-size: 3rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 8px;
   }
 }
 
 #constitutionModal {
-  --bs-modal-bg: white;
   --bs-modal-width: 800px;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  #constitution {
+    --color: black;
+  }
+
+  #constitutionModal {
+    --bs-modal-bg: white;
+  }
 }
 
 /* Dark Theme */
 [data-theme="dark"] {
-
   #constitution {
     --color: #ffe2e2;
   }
@@ -47,5 +62,4 @@
       filter: invert(1) grayscale(100%) brightness(200%);
     }
   }
-
 }
