@@ -1,36 +1,51 @@
+/* Styles for the Bylaws and Constitution, and its modal */
+
+/* Light Theme */
 #constitution {
   --color: black;
+
   background-image: url(../assets/image/constitution_bg.png);
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: repeat-y;
+  background-position: right top;
+  image-rendering: pixelated;
   color: var(--color);
-}
 
-[data-theme="dark"] #constitution {
-  --color: #ffe2e2;
-}
+  p {
+    padding-left: 15px;
+    font-family: Kollektif;
+    color: var(--color);
+    max-width: 600px;
+  }
 
-#constitution p {
-  padding-left: 15px;
-  font-family: Kollektif;
-  color: var(--color);
-  max-width: 600px;
-}
+  p p {
+    padding-left: 25px;
+  }
 
-#constitution p p {
-  padding-left: 25px;
-}
-
-#constitution h1, #constitution h2 {
-  font-family: Bebas Nueue;
-  color: var(--color);
+  h1, h2 {
+    font-family: Bebas Nueue;
+    color: var(--color);
+  }
 }
 
 #constitutionModal {
-  --bs-modal-bg: var(--body_background);
+  --bs-modal-bg: white;
   --bs-modal-width: 800px;
 }
 
-[data-theme="dark"] #constitutionModal .btn-close {
-  filter: invert(1) grayscale(100%) brightness(200%);
+/* Dark Theme */
+[data-theme="dark"] {
+
+  #constitution {
+    --color: #ffe2e2;
+  }
+
+  #constitutionModal {
+    --bs-modal-bg: var(--body_background);
+
+    .btn-close {
+      filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  }
+
 }
