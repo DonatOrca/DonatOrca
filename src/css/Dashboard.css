@@ -7,19 +7,24 @@
 
 #title-text {
   font-family: Lovelo, sans-serif;
-  font-size: 6em;
+  font-size: 8em;
   margin: 0px 0px -10px 0px;
   letter-spacing: 10px;
 }
 
 #title-sub-text {
   font-family: Bebas Nueue, sans-serif;
+  font-size: 2em;
   letter-spacing: 2px;
 }
 
 #content-text {
   font-family: Kollektif, sans-serif;
   text-align: justify;
+}
+
+.dashboard-img {
+  margin-left: 150px;
 }
 
 .title {
@@ -50,10 +55,33 @@
   #title-text {
     font-size: 5em;
   }
+  #title-sub-text {
+    font-size: 2.25em;
+  }
+  #content-text {
+    font-size: 2.25em;
+  }
+  #bylaw {
+    font-size: 2.5em;
+  }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 992px) {
   #title-text {
     font-size: 4em;
+  }
+  #title-sub-text {
+    font-size: 1em;
+  }
+  #content-text {
+    font-size: 1.25em;
+  }
+  #bylaw {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  #dashboard-img {
+    margin-left: 150px;
   }
 }

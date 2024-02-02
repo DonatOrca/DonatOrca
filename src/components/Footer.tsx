@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import '../css/Footer.css';
+import "../css/Footer.css";
 
-import logo from '../assets/image/donat_christmas_logo.jpg';
+import logo from "../assets/image/donat_logo.png";
+import Modal from "./Modal";
+import License from "./License";
 
 const Footer = () => {
   return (
@@ -15,22 +17,49 @@ const Footer = () => {
           <div className="col">
             <h1>Contacts</h1>
             <ul className="footer-list">
-              <li><a href="https://www.facebook.com/OrCaDONAT" target="_blank">Facebook Page</a></li>
-              <li><a href="mailto:donat.stiorca@gmail.com" target="_blank">Email</a></li>
-              <li><Link to="/DonatOrca/">Dashboard</Link></li>
+              <li>
+                <Link to="https://www.facebook.com/OrCaDONAT" target="_blank">
+                  Facebook Page
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWSZDwLsljWhgKfXlZTnxPndGsDbdpzzxJsvRKfrVDXnMDWdSgtKZJRcmVnzDXKfFzWhN"
+                  target="_blank"
+                >
+                  Email
+                </Link>
+              </li>
+              <li>
+                <Link to="/DonatOrca/">Dashboard</Link>
+              </li>
             </ul>
           </div>
           <div className="col">
             <h1>Copyright</h1>
-            <a href="#">Website's License</a>
+            <Link
+              className="license"
+              data-bs-toggle="modal"
+              data-bs-target="#licenseModal"
+              to={""}
+            >
+              Website's License
+            </Link>
           </div>
           <div className="col position-relative">
-            <img id="footer-logo" src={logo} className="rounded position-absolute"  style={{ width: "96px" }} />
+            <img
+              id="footer-logo"
+              src={logo}
+              className="rounded position-absolute"
+            />
           </div>
         </div>
       </footer>
+      <Modal header="GNU GENERAL PUBLIC LICENSE" id="licenseModal">
+        <License />
+      </Modal>
     </>
   );
-}
+};
 
 export default Footer;
