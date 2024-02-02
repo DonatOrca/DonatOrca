@@ -25,15 +25,25 @@ const DarkMode = () => {
   };
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("selectedTheme");
     const prefersDarkMode = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    setIsChecked(prefersDarkMode);
 
-    if (prefersDarkMode) {
-      setDarkMode();
+    if (savedTheme) {
+      setIsChecked(savedTheme === "dark");
+      if (savedTheme === "dark") {
+        setDarkMode();
+      } else {
+        setLightMode();
+      }
     } else {
-      setLightMode();
+      setIsChecked(prefersDarkMode);
+      if (prefersDarkMode) {
+        setDarkMode();
+      } else {
+        setLightMode();
+      }
     }
   }, []);
 
