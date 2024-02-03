@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "../css/Footer.css";
 
-import logo from "../assets/svg/donat_logo.svg";
+import logo from "../../public/donat_logo.svg";
 import Modal from "./Modal";
 import License from "./License";
 
