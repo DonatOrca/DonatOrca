@@ -3,7 +3,7 @@ import Constitution from "../components/Constitution";
 
 import "../css/Dashboard.css";
 
-import dashboard_img from "../assets/image/dashboard_img.png";
+import dashboard_img from "../assets/svg/dashboard_img.svg";
 
 function Dashboard() {
   return (

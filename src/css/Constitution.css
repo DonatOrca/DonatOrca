@@ -1,7 +1,7 @@
 /* Styles for the Bylaws and Constitution, and its modal */
 
 #constitution {
-  background-image: url(../assets/image/constitution_bg.png);
+  background-image: url(../assets/svg/constitution_bg.svg);
   background-size: contain;
   background-repeat: repeat;
   background-position: right top;
