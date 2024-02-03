@@ -6,11 +6,10 @@ const License = () => {
       <div id="license" className="p-2 fs-6">
         <h1 className="text-center">GNU GENERAL PUBLIC LICENSE</h1>
         <h3 className="mb-5 text-center">Version 3, 29 June 2007</h3>
+        <a href="https://fsf.org/">
+          Copyright (C) 2007 Free Software Foundation, Inc.
+        </a>
         <p>
-          <a href="https://fsf.org/">
-            Copyright (C) 2007 Free Software Foundation, Inc.
-          </a>
-          <br />
           Everyone is permitted to copy and distribute verbatim copies of this
           license document, but changing it is not allowed.
         </p>
@@ -294,7 +293,7 @@ const License = () => {
           Corresponding Source under the terms of this License, in one of these
           ways:
         </p>
-        <div className="ms-4">
+        <div className="ms-3">
           <p>
             a) Convey the object code in, or embodied in, a physical product
             (including a physical distribution medium), accompanied by the
@@ -424,7 +423,7 @@ const License = () => {
           add to a covered work, you may (if authorized by the copyright holders
           of that material) supplement the terms of this License with terms:
         </p>
-        <div className="ms-4">
+        <div className="ms-3">
           <p>
             a) Disclaiming warranty or limiting liability differently from the
             terms of sections 15 and 16 of this License; or
@@ -729,9 +728,63 @@ const License = () => {
           the exclusion of warranty; and each file should have at least the
           "copyright" line and a pointer to where the full notice is found.
         </p>
-        <div className="ms-4">
-          <p></p>
+        <div className="ms-3">
+          <p>
+            (one line to give the program's name and a brief idea of what it
+            does.) Copyright (C) (year) (name of author)
+          </p>
+          <p>
+            This program is free software: you can redistribute it and/or modify
+            it under the terms of the GNU General Public License as published by
+            the Free Software Foundation, either version 3 of the License, or
+            (at your option) any later version.
+          </p>
+          <p>
+            This program is distributed in the hope that it will be useful, but
+            WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+            General Public License for more details.
+          </p>
+          <p>
+            You should have received a copy of the GNU General Public License
+            along with this program. If not, see
+            (https://www.gnu.org/licenses/).
+          </p>
+          <p>
+            Also add information on how to contact you by electronic and paper
+            mail.
+          </p>
+          <p>
+            If the program does terminal interaction, make it output a short
+            notice like this when it starts in an interactive mode:
+          </p>
+          <p>
+            (program) Copyright (C) (year) (name of author) This program comes
+            with ABSOLUTELY NO WARRANTY; for details type `show w'. This is free
+            software, and you are welcome to redistribute it under certain
+            conditions; type `show c' for details.
+          </p>
         </div>
+        <p>
+          The hypothetical commands `show w' and `show c' should show the
+          appropriate parts of the General Public License. Of course, your
+          program's commands might be different; for a GUI interface, you would
+          use an "about box".
+        </p>
+        <p>
+          You should also get your employer (if you work as a programmer) or
+          school, if any, to sign a "copyright disclaimer" for the program, if
+          necessary. For more information on this, and how to apply and follow
+          the GNU GPL, see (https://www.gnu.org/licenses/).
+        </p>
+        <p>
+          The GNU General Public License does not permit incorporating your
+          program into proprietary programs. If your program is a subroutine
+          library, you may consider it more useful to permit linking proprietary
+          applications with the library. If this is what you want to do, use the
+          GNU Lesser General Public License instead of this License. But first,
+          please read (https://www.gnu.org/licenses/why-not-lgpl.html).
+        </p>
       </div>
     </>
   );
