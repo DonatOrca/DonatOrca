@@ -10,7 +10,7 @@ interface Hyperlink {
   target?: string;
 }
 
-/* Represents a row of links in the footer's body */
+/* Represents a collumn of links in the footer's body */
 interface CollumnProps {
   header: string;
   links: Hyperlink[];
