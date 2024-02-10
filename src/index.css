@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bgc: 252 227 255;
+    --color-txc: 29 20 50;
+  }
+  :root[data-theme="dark"] {
+    --color-bgc: 29 20 50;
+    --color-txc: 252 227 255;
+  }
+}
+
+@font-face {
+  font-family: "Bebas Nueue";
+  src: url("./assets/fonts/BebasNeue/BebasNeue.ttf") format("truetype");
+  font-size: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/fonts/Kollektif/Kollektif.ttf") format("truetype");
+  font-size: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/fonts/Kollektif/Kollektif-BoldItalic.ttf")
+    format("truetype");
+  font-size: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/fonts/Kollektif/Kollektif-Italic.ttf") format("truetype");
+  font-size: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lovelo";
+  src: url("./assets/fonts/Lovelo/Lovelo.ttf") format("truetype");
+  font-size: normal;
+  font-style: normal;
+}

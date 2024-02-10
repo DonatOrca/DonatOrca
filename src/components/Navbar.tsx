@@ -1,58 +1,52 @@
+/*
+TODO: Make hover underline
+*/
+
 import { Link } from "react-router-dom";
 import DarkMode from "./DarkMode";
-import "../css/Navbar.css";
-import "../css/Fonts.css";
-
-import useMediaQuery from "./useMediaQuery";
 
 function Navbar() {
-  const matches = useMediaQuery("(min-width: 992px)");
-
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
-        {matches ? "" : <DarkMode />}
-        <button
-          className="navbar-toggler justify-content-end"
-          itemType="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            viewBox="0 0 16 16"
-          >
-            <path d="M2 2.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 7.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zM2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div className="navbar-nav">
-            <Link to="/DonatOrca/" className="nav-link">
+    <>
+      <nav className="md:flex md:justify-between md:p-5">
+        <DarkMode />
+        <i className="fa-regular fa-bars absolute right-0 top-0 flex cursor-pointer justify-end p-4 md:opacity-0"></i>
+        <ul className="group font-kollektif opacity-0 md:flex md:justify-end md:opacity-100 lg:text-xl">
+          <li className="my-3 mr-[6em] md:my-6">
+            <Link
+              to={"/Donat/"}
+              className="hover:!filter-none group-hover:blur-[0.7px]"
+            >
               Dashboard
             </Link>
-            <Link to="/DonatOrca/announcement" className="nav-link">
+          </li>
+          <li className="my-3 mr-[6em] md:my-6">
+            <Link
+              to={"/Donat/"}
+              className="hover:!filter-none group-hover:blur-[0.7px]"
+            >
               Announcement
             </Link>
-            <Link to="/DonatOrca/officers" className="nav-link">
+          </li>
+          <li className="my-3 mr-[6em] md:my-6">
+            <Link
+              to={"/Donat/"}
+              className="hover:!filter-none group-hover:blur-[0.7px]"
+            >
               Officers
             </Link>
-            <Link to="/DonatOrca/history" className="nav-link">
+          </li>
+          <li className="my-3 mr-[6em] md:my-6">
+            <Link
+              to={"/Donat/"}
+              className="hover:!filter-none group-hover:blur-[0.7px]"
+            >
               History
             </Link>
-            {matches ? <DarkMode /> : ""}
-          </div>
-        </div>
-      </div>
-    </nav>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
 

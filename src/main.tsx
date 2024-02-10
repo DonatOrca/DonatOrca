@@ -1,48 +1,35 @@
-/* React */
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
-/* Bootstrap */
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-/* Components */
 import App from "./App.tsx";
-
+import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Dashboard from "./pages/Dashboard.tsx";
-import Announcement from "./pages/Announcement.tsx";
-import Officers from "./pages/Officers.tsx";
-import History from "./pages/History.tsx";
 
-
-/* Setup page routes */
 const router = createBrowserRouter([
   {
-    path: "/DonatOrca/",
+    path: "/Donat/",
     element: <App />,
     children: [
       {
-        path: "/DonatOrca/",
+        path: "/Donat/",
         element: <Dashboard />,
       },
-      {
-        path: "/DonatOrca/announcement",
-        element: <Announcement />,
-      },
-      {
-        path: "/DonatOrca/officers",
-        element: <Officers />,
-      },
-      {
-        path: "/DonatOrca/history",
-        element: <History />,
-      },
+      // {
+      //   path: "/Donat/announcement",
+      //   element: <Announcement />,
+      // },
+      // {
+      //   path: "/Donat/officers",
+      //   element: <Officers />,
+      // },
+      // {
+      //   path: "/Donat/history",
+      //   element: <History />,
+      // },
     ],
   },
 ]);
 
-/* react does some cool stuff here i mean it creates our website in index.html's div#root i think */
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <RouterProvider router={router} />
