@@ -3,7 +3,7 @@ TODO: Make hover underline
 */
 
 import { Link } from "react-router-dom";
-import DarkMode from "./components/DarkMode";
+import DarkMode from "./DarkMode";
 import { useState } from "react";
 
 function Navbar() {
@@ -27,7 +27,7 @@ function Navbar() {
               <ul className="group font-kollektif md:visible md:flex md:justify-end lg:text-xl">
                 <li className="my-3 mr-[6em] md:my-6">
                   <Link
-                    to={"/Donat/"}
+                    to={"/Donat/dashboard"}
                     className="hover:!filter-none group-hover:blur-[0.7px]"
                   >
                     Dashboard
