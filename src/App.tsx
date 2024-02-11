@@ -6,16 +6,24 @@ import Footer from "./components/Footer";
 import Modal from "./components/Modal";
 
 function App() {
+  const [modal, setModal] = useState({
+    header: "Modal",
+    children: <></>,
+  });
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <>
       <Navbar />
-      <Outlet />
+      <Outlet context={[setModal, setModalVisible]} />
       <Footer />
 
-      <Modal visible={modalVisible} setVisible={setModalVisible}>
-        <div className="p-4">ye</div>
+      <Modal
+        header={modal.header}
+        visible={modalVisible}
+        setVisible={setModalVisible}
+      >
+        {modal.children}
       </Modal>
     </>
   );
