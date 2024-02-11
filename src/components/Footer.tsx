@@ -17,12 +17,12 @@ interface CollumnProps {
 }
 
 const Footer = () => {
-  let CONTACTS: Hyperlink[] = [
+  const CONTACTS: Hyperlink[] = [
     { text: "Facebook Page", url: "https://www.facebook.com/OrCaDONAT" },
     { text: "Email", url: "mailto:donat.stiorca@gmail.com" },
     { text: "Dashboard", url: "/Donat/", target: "_self" },
   ];
-  let COPYRIGHT: Hyperlink[] = [
+  const COPYRIGHT: Hyperlink[] = [
     { text: "Website's License", url: "#", target: "_self" },
   ];
 
@@ -53,7 +53,7 @@ const FooterCollumn = ({ header, links }: CollumnProps) => {
       <h1 className="pb-4 font-bold">{header}</h1>
       <ul className="p-0 text-2xl !leading-10 no-underline">
         {links.map((link) => (
-          <li>
+          <li key={link.text}>
             <Link
               className="relative
                        before:absolute before:bottom-[-2px] before:left-0 before:h-0.5 before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-out before:content-['']
