@@ -55,7 +55,7 @@ const DarkMode = () => {
           checked={isChecked}
         />
         <label
-          className={`relative block h-[30px] w-[65px] cursor-pointer rounded-[200px] bg-[#ebebeb] shadow-dmShadow transition-all duration-300 after:absolute after:left-[3px] after:top-[3px] after:h-[25px] after:w-[25px] after:rounded-[180px] after:bg-gradient-to-b after:from-[#ffcc89] after:to-[#d8860b] after:shadow-dmAfterShadow after:transition-all after:duration-300 after:content-[''] peer-checked/switch:bg-[#242424] peer-checked/switch:transition-all peer-checked/switch:duration-300 peer-checked/switch:after:left-[62px] peer-checked/switch:after:translate-x-[-100%] peer-checked/switch:after:bg-gradient-to-b peer-checked/switch:after:from-[#777] peer-checked/switch:after:to-[#3a3a3a]`}
+          className={`relative z-50 block h-[30px] w-[65px] cursor-pointer rounded-[200px] bg-[#ebebeb] shadow-dmShadow transition-all duration-300 after:absolute after:left-[3px] after:top-[3px] after:h-[25px] after:w-[25px] after:rounded-[180px] after:bg-gradient-to-b after:from-[#ffcc89] after:to-[#d8860b] after:shadow-dmAfterShadow after:transition-all after:duration-300 after:content-[''] peer-checked/switch:bg-[#242424] peer-checked/switch:transition-all peer-checked/switch:duration-300 peer-checked/switch:after:left-[62px] peer-checked/switch:after:translate-x-[-100%] peer-checked/switch:after:bg-gradient-to-b peer-checked/switch:after:from-[#777] peer-checked/switch:after:to-[#3a3a3a]`}
           htmlFor="themeToogle"
         >
           <svg
