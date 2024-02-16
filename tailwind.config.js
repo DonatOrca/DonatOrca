@@ -17,6 +17,7 @@ export default {
       colors: {
         bgc: "rgb(var(--color-bgc) / <alpha-value>)",
         txc: "rgb(var(--color-txc) / <alpha-value>)",
+        ter: "rgb(var(--color-ter) / <alpha-value>)",
       },
       animation: {
         glow: "glow 1s ease-in-out infinite alternate",
