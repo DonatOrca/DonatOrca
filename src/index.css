@@ -6,10 +6,18 @@
   :root {
     --color-bgc: 252 227 255;
     --color-txc: 29 20 50;
+
+    .text-neon {
+      @apply [text-shadow:_-4px_3px_0_rgba(29,20,50,0.4)];
+    }
   }
   :root[data-theme="dark"] {
     --color-bgc: 29 20 50;
     --color-txc: 252 227 255;
+
+    .text-neon {
+      @apply animate-glow;
+    }
   }
 }
 

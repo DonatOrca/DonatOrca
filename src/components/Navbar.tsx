@@ -43,7 +43,7 @@ function Navbar() {
                 </li>
                 <li className="my-3 mr-[6em] md:my-6">
                   <Link
-                    to={"/Donat/"}
+                    to={"/Donat/officers"}
                     className="hover:!filter-none group-hover:blur-[0.7px]"
                   >
                     Officers

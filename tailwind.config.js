@@ -18,6 +18,21 @@ export default {
         bgc: "rgb(var(--color-bgc) / <alpha-value>)",
         txc: "rgb(var(--color-txc) / <alpha-value>)",
       },
+      animation: {
+        glow: "glow 1s ease-in-out infinite alternate",
+      },
+      keyframes: {
+        glow: {
+          from: {
+            textShadow:
+              "0 0 10px #fff, 0 0 20px #fff, 0 0 30px #E60BFF, 0 0 40px #E60BFF, 0 0 50px #E60BFF, 0 0 60px #E60BFF, 0 0 70px #E60BFF",
+          },
+          to: {
+            textShadow:
+              "0 0 20px #fff, 0 0 30px #F17AFF, 0 0 40px #F17AFF, 0 0 50px #F17AFF, 0 0 60px #F17AFF, 0 0 70px #F17AFF, 0 0 80px #F17AFF",
+          },
+        },
+      },
     },
     fontFamily: {
       arial: ["Arial", "sans-serif"],
@@ -26,6 +41,7 @@ export default {
       lovelo: ["Lovelo", "sans-serif"],
     },
     letterSpacing: {
+      widester: ".15em",
       widestest: ".25em",
     },
   },

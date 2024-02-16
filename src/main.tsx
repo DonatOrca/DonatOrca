@@ -1,9 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import App from "./App.tsx";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import Dashboard from "./pages/Dashboard.tsx";
+import Officers from "./pages/Officers.tsx";
 
 const router = createBrowserRouter([
   {
@@ -18,10 +21,10 @@ const router = createBrowserRouter([
       //   path: "/Donat/announcement",
       //   element: <Announcement />,
       // },
-      // {
-      //   path: "/Donat/officers",
-      //   element: <Officers />,
-      // },
+      {
+        path: "/Donat/officers",
+        element: <Officers />,
+      },
       // {
       //   path: "/Donat/history",
       //   element: <History />,
