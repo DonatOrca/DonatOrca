@@ -1,4 +1,7 @@
+import { ReactNode, useState } from "react";
+
 import officersText from "../assets/images/officers_text.png";
+import data from "../data/officers.json";
 
 interface Person {
   name: string;
@@ -16,98 +19,34 @@ interface BodyProps {
   people: Person[];
 }
 
-/* List of officers */
-const OFFICERS: Person[] = [
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "Lorem ipsum dollar sit a a ame, consectetur adipiscing elit sed do eiustempor.",
-  },
-  {
-    name: "NAMAE NAMAE NAMAE NAMAE",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "gwikakshdfc9woeafcj9w7oe8hrf9ub r13q8iwdhsd812 qgrf9cwo 3yrfj29o8ery fu9w8efhaksjf",
-  },
-  {
-    name: "NAMIE NAMIE NAMIE",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "e qwasiYFdcge79f fg9eayf ef qrlaguwfd9wt7e fgogh294 gfwu gfsl hf2iwf g9w8f y2y 3hr8",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "zxzxzxzxz xz x zx zx z x zx z xzx z x z x z x z  zx z xzhxiusgdisagd iwefhe uifhwiehf",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "Lorem ipsum dollar sit a a ame, consectetur adipiscing elit sed do eiustempor.",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-    quote:
-      "Lorem ipsum dollar sit a a ame, consectetur adipiscing elit sed do eiustempor.",
-  },
-];
-
-const ARCHIVED: Person[] = [
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-  {
-    name: "NAME NAME NAME NAME",
-    picture: "src/assets/images/picture.png",
-    position: "POSITION",
-  },
-];
+interface AccoItemProps {
+  header: string;
+  children: ReactNode;
+}
 
 const Officers = () => {
+  let officers = data;
+
   return (
     <div className="py-5">
       {/* Current officers */}
       <Header title="CURRENT" description="SCHOOL YEAR 2023-2024" />
-      <Body people={OFFICERS} />
+      <Body people={officers.current} />
 
       {/* Add some space in between */}
       <div className="py-6"></div>
 
       {/* Archived Officers */}
       <Header title="ARCHIVED" />
-      <Body people={ARCHIVED} />
+      <AccoItem header="2022-2023">
+        <Body people={officers["2022-2023"]} />
+      </AccoItem>
+      <AccoItem header="2021-2022">
+        <Body people={officers["2021-2022"]} />
+      </AccoItem>
+      <AccoItem header="2020-2021">
+        <Body people={officers["2020-2021"]} />
+      </AccoItem>
     </div>
   );
 };
@@ -166,6 +105,27 @@ const Card = ({ name, picture, position, quote }: Person) => {
           </p>
         )}
       </div>
+    </div>
+  );
+};
+
+const AccoItem = ({ header, children }: AccoItemProps) => {
+  const [open, setOpen] = useState(false);
+
+  function toggle() {
+    setOpen(!open);
+  }
+
+  return (
+    <div className="my-6">
+      <div
+        onClick={toggle}
+        className="text-neon text-center font-lovelo text-3xl tracking-widester
+                   hover:cursor-pointer"
+      >
+        <span className="hover:border-b-4 hover:border-txc">✦ {header}</span>
+      </div>
+      <div className={`${!open && "hidden"} overflow-hidden`}>{children}</div>
     </div>
   );
 };
