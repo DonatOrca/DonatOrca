@@ -1,4 +1,3 @@
-import Neon from "../components/Neon";
 import officersText from "../assets/images/officers_text.png";
 
 interface Person {
@@ -117,8 +116,8 @@ const Header = ({ title, description }: HeaderProps) => {
   return (
     <div className="w-full text-center font-lovelo">
       {title && (
-        <div className="mx-auto max-w-5xl text-5xl tracking-widester">
-          <Neon>{title}</Neon>
+        <div className="text-neon mx-auto max-w-5xl text-5xl tracking-widester">
+          {title}
         </div>
       )}
       <div className="my-4 bg-[#1D1432] p-5">
@@ -151,7 +150,7 @@ const Body = ({ people }: BodyProps) => {
 const Card = ({ name, picture, position, quote }: Person) => {
   return (
     <div className="m-4 inline-block w-full max-w-[300px] overflow-hidden align-top">
-      <div className="bg-ter rounded px-2 py-5">
+      <div className="rounded bg-ter px-2 py-5">
         <img className="w-full rounded border-4 border-black" src={picture} />
       </div>
       <div className="px-6 py-4">
