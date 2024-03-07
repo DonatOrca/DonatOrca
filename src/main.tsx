@@ -15,15 +15,14 @@ import Announcement from "./pages/Announcement.tsx";
 import Officers from "./pages/Officers.tsx";
 import History from "./pages/History.tsx";
 
-
 /* Setup page routes */
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Dashboard />,
       },
       {
