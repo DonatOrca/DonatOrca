@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import "./css/App.css";
 import "./css/Fonts.css";
 
-
 function App() {
   return (
     <>
