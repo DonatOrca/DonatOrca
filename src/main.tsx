@@ -18,23 +18,23 @@ import History from "./pages/History.tsx";
 /* Setup page routes */
 const router = createBrowserRouter([
   {
-    path: "",
+    path: "/DonatOrca/",
     element: <App />,
     children: [
       {
-        path: "",
+        path: "/DonatOrca/",
         element: <Dashboard />,
       },
       {
-        path: "/announcement",
+        path: "/DonatOrca/announcement",
         element: <Announcement />,
       },
       {
-        path: "/officers",
+        path: "/DonatOrca/officers",
         element: <Officers />,
       },
       {
-        path: "/history",
+        path: "/DonatOrca/history",
         element: <History />,
       },
     ],
