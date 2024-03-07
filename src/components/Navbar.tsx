@@ -36,16 +36,16 @@ function Navbar() {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <Link to="/DonatOrca/" className="nav-link">
+            <Link to="/" className="nav-link">
               Dashboard
             </Link>
-            <Link to="/DonatOrca/announcement" className="nav-link">
+            <Link to="/announcement" className="nav-link">
               Announcement
             </Link>
-            <Link to="/DonatOrca/officers" className="nav-link">
+            <Link to="/officers" className="nav-link">
               Officers
             </Link>
-            <Link to="/DonatOrca/history" className="nav-link">
+            <Link to="/history" className="nav-link">
               History
             </Link>
             {matches ? <DarkMode /> : ""}
